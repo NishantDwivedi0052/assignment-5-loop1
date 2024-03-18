@@ -1,0 +1,103 @@
+Q1 Print all the odd numbers from 1 to 100.
+ANS - #include<iostream>
+      using namespace std;
+      int main(){
+          for(int i=1;i<=100;i++){
+              if(i%2!=0) cout<<i<<" ";
+      }
+    OUTPUT - 1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 55 57 59 61 63 65 67 69 71 73 75 77 79 81 83 85 87 89 91 93 95 97 99
+
+Q2  Print all numbers from 1 to 100 that are divisible by 3.
+ANS - #include<iostream>
+      using namespace std;
+      int main(){
+          for(int i=1;i<=100;i++){
+              if(i%3==0) cout<<i<<" ";
+          }   
+      }
+OUTPUT - 3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99
+
+Q3 Print the table of ‘n’. Here ‘n’ is an integer which the user will input.
+ANS - #include<iostream>
+      using namespace std;
+      int main(){
+          int n;
+          cout<<"Enter n : ";
+          cin>>n;
+          for(int i=n;i<=n*10;i+=n){
+              cout<<i<<" ";
+          }
+      }
+OUTPUT -  Enter n : 12
+          12 24 36 48 60 72 84 96 108 120
+
+Q4 Display this AP - 4,7,10,13,16.. upto ‘n’ terms.
+ANS - #include<iostream>
+      using namespace std;
+      int main(){
+          int n;
+          cout<<"Enter n : ";
+          cin>>n;
+          // 4,7,10,13,16.... upto n terms
+          int a = 4;
+          int r = 3;
+          for(int i=1;i<=n;i++){
+              cout<<a<<" ";
+              a+=r;
+          }
+      }
+OUTPUT -  Enter n : 10
+          4 7 10 13 16 19 22 25 28 31
+
+Q5 Display this GP - 3,12,48,.. upto ‘n’ terms.
+ANS - #include<iostream>
+      using namespace std;
+      int main(){
+          int n;
+          cout<<"Enter n : ";
+          cin>>n;
+          // 3,12,48,192.... upto n terms
+          int a = 3;
+          int r = 4;
+          for(int i=1;i<=n;i++){
+              cout<<a<<" ";
+              a*=r;
+          }
+      }
+OUTPUT -  Enter n : 8
+          3 12 48 192 768 3072 12288 49152
+
+Q6 Write a program to print all the ASCII values and their equivalent characters of 26 alphabets using a while loop.
+ANS - #include<iostream>
+      using namespace std;
+      int main(){
+          for(int i=65;i<=90;i++){
+              cout<<(char)i<<" - "<<i<<endl;
+          }
+      }
+OUTPUT -    A - 65
+            B - 66
+            C - 67
+            D - 68
+            E - 69
+            F - 70
+            G - 71
+            H - 72
+            I - 73
+            J - 74
+            K - 75
+            L - 76
+            M - 77
+            N - 78
+            O - 79
+            P - 80
+            Q - 81
+            R - 82
+            S - 83
+            T - 84
+            U - 85
+            V - 86
+            W - 87
+            X - 88
+            Y - 89
+            Z - 90
